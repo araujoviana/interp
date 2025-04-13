@@ -1,7 +1,9 @@
-from sympy import symbols, lambdify
+from sympy import symbols, lambdify, Rational, simplify
 from sympy.polys.polyfuncs import interpolate
 import numpy as np
 import matplotlib.pyplot as plt
+
+# TODO botar comentários!
 
 def ler_entradas() -> tuple[int,list[tuple[float, float]]]:
     try:
@@ -39,9 +41,9 @@ def calcular_l_n(x, pontos, n):
 
     for i, (x_i, _) in enumerate(pontos):
         if i != n:
-            l_n *= (x - x_i) / (x_n - x_i)
+            l_n *= (x - Rational(x_i)) / (Rational(x_n) - Rational(x_i))
 
-    return l_n
+    return simplify(l_n)
 
 
 def main():
@@ -59,6 +61,8 @@ def main():
 
     if input("Gerar gráfico? (s/n): ").lower().strip() == "s":
         gerar_grafico(x, pontos, poly)
+    else:
+        print("Não vou gerar o gráfico 😿")
 
 
 if __name__ == "__main__":
