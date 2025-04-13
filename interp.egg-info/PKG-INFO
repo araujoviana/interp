@@ -1,8 +1,0 @@
-Metadata-Version: 2.4
-Name: interp
-Version: 0.1.0
-Summary: Auxiliar para interpolação de lagrange
-Requires-Python: >=3.11
-Requires-Dist: matplotlib>=3.10.1
-Requires-Dist: numpy>=2.2.4
-Requires-Dist: sympy>=1.13.3
