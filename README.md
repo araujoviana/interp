@@ -1,3 +1,5 @@
+> 📦 **Archived (November 2026).** A personal Python helper for Lagrange polynomial interpolation, from a numerical-algorithms course (April 2025). Written in Portuguese. Kept as a read-only record of what I was working on at the time; it is no longer maintained.
+
 # Interpolação de Lagrange
 
 Este projeto realiza a interpolação polinomial de Lagrange com base em pontos fornecidos pelo usuário. Utiliza a biblioteca `sympy` para cálculos simbólicos e pode gerar um gráfico do polinômio interpolador.
